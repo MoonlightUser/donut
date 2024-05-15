@@ -1,6 +1,21 @@
 const pre = document.createElement("pre");
 document.body.appendChild(pre);
 
+function hashCode(str) { // java String#hashCode
+    var hash = 0;
+    for (var i = 0; i < str.length; i++) {
+       hash = str.charCodeAt(i) + ((hash << 5) - hash);
+    }
+    return hash;
+} 
+
+function intToRGB(i){
+    var c = (i & 0x00FFFFFF)
+        .toString(16)
+        .toUpperCase();
+    return "00000".substring(0, 6 - c.length) + c;
+}
+
                let x=1760,
           z=0,y=0;setInterval
         (()=>{z+=.07,y+=.03;const
@@ -17,7 +32,9 @@ s=0;s<6.28;s+=          .02){const v=Math
   (M*i*o+p*n),f=0|8*((h*e-v*c*t)*n-v*c*
     e-h*t-M*c*o), y=d+80*m;m<22&&m>=0
      &&d>=0&&d<79&&l>r[y] &&(r[y]=l,
-      a[y]= ".<zgdn@░▒▓█"[f>0?f:0
+      a[y]= intToRGB(hashCode("█#191919"))+intToRGB(hashCode("█#323232"))+intToRGB(hashCode("█#4c4c4c"))
+                             +intToRGB(hashCode("█#666666"))+intToRGB(hashCode("█#7f7f7f"))+intToRGB(hashCode("█#999999"))
+                             +intToRGB(hashCode("█#b2b2b2"))+intToRGB(hashCode("█#cccccc"))+intToRGB(hashCode("█#e5e5e5"))+intToRGB(hashCode("█#ffffff")) `[f>0?f:0
        ])}}pre.innerHTML=a.join
           ("")},50); /* JS by 
               @housamz */
