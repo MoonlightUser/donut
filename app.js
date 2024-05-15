@@ -17,7 +17,7 @@ s=0;s<6.28;s+=          .02){const v=Math
   (M*i*o+p*n),f=0|8*((h*e-v*c*t)*n-v*c*
     e-h*t-M*c*o), y=d+80*m;m<22&&m>=0
      &&d>=0&&d<79&&l>r[y] &&(r[y]=l,
-      a[y]= ".zgdn@░▒▓█"[f>0?f:0
+      a[y]= ".<zgdn@░▒▓█"[f>0?f:0
        ])}}pre.innerHTML=a.join
           ("")},50); /* JS by 
               @housamz */
