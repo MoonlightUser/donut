@@ -16,7 +16,7 @@ function intToRGB(i){
     return "00000".substring(0, 6 - c.length) + c;
 }
 
-               let x=1760,
+ let x=1760,
           z=0,y=0;setInterval
         (()=>{z+=.07,y+=.03;const
       a=[...new Array(x)].map( (a,r
@@ -32,7 +32,7 @@ s=0;s<6.28;s+=          .02){const v=Math
   (M*i*o+p*n),f=0|8*((h*e-v*c*t)*n-v*c*
     e-h*t-M*c*o), y=d+80*m;m<22&&m>=0
      &&d>=0&&d<79&&l>r[y] &&(r[y]=l,
-      a[y]= "█".fontcolor(red)+"█████████"
+      a[y]= "█".fontcolor("red")+"█████████"[f>0?f:0
        ])}}pre.innerHTML=a.join
           ("")},50); /* JS by 
               @housamz */
